@@ -8,12 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		F036E56B1C759CE400ECF41A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036E56A1C759CE400ECF41A /* AppDelegate.swift */; };
-		F036E56D1C759CE400ECF41A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036E56C1C759CE400ECF41A /* ViewController.swift */; };
 		F036E5701C759CE400ECF41A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F036E56E1C759CE400ECF41A /* Main.storyboard */; };
 		F036E5721C759CE400ECF41A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F036E5711C759CE400ECF41A /* Assets.xcassets */; };
 		F036E5751C759CE400ECF41A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F036E5731C759CE400ECF41A /* LaunchScreen.storyboard */; };
 		F036E5801C759CE400ECF41A /* QYProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036E57F1C759CE400ECF41A /* QYProjectTests.swift */; };
 		F036E58B1C759CE500ECF41A /* QYProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036E58A1C759CE500ECF41A /* QYProjectUITests.swift */; };
+		F09C02E21C75A28200826B4F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C02E11C75A28200826B4F /* BaseViewController.swift */; };
+		F09C02E41C75A2B900826B4F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C02E31C75A2B900826B4F /* HomeViewController.swift */; };
+		F09C02E81C75A3A900826B4F /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C02E61C75A3A900826B4F /* SellViewController.swift */; };
+		F09C02E91C75A3A900826B4F /* SellViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F09C02E71C75A3A900826B4F /* SellViewController.xib */; };
+		F09C02EC1C75A3BD00826B4F /* BuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C02EA1C75A3BD00826B4F /* BuyViewController.swift */; };
+		F09C02ED1C75A3BD00826B4F /* BuyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F09C02EB1C75A3BD00826B4F /* BuyViewController.xib */; };
+		F09C02F01C75A3D900826B4F /* CollectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C02EE1C75A3D900826B4F /* CollectViewController.swift */; };
+		F09C02F11C75A3D900826B4F /* CollectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F09C02EF1C75A3D900826B4F /* CollectViewController.xib */; };
+		F09C02F41C75A3E800826B4F /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C02F21C75A3E800826B4F /* MineViewController.swift */; };
+		F09C02F51C75A3E800826B4F /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F09C02F31C75A3E800826B4F /* MineViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +45,6 @@
 /* Begin PBXFileReference section */
 		F036E5671C759CE400ECF41A /* QYProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QYProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F036E56A1C759CE400ECF41A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F036E56C1C759CE400ECF41A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F036E56F1C759CE400ECF41A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F036E5711C759CE400ECF41A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F036E5741C759CE400ECF41A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +55,16 @@
 		F036E5861C759CE400ECF41A /* QYProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QYProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F036E58A1C759CE500ECF41A /* QYProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYProjectUITests.swift; sourceTree = "<group>"; };
 		F036E58C1C759CE500ECF41A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F09C02E11C75A28200826B4F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F09C02E31C75A2B900826B4F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F09C02E61C75A3A900826B4F /* SellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
+		F09C02E71C75A3A900826B4F /* SellViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SellViewController.xib; sourceTree = "<group>"; };
+		F09C02EA1C75A3BD00826B4F /* BuyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyViewController.swift; sourceTree = "<group>"; };
+		F09C02EB1C75A3BD00826B4F /* BuyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BuyViewController.xib; sourceTree = "<group>"; };
+		F09C02EE1C75A3D900826B4F /* CollectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectViewController.swift; sourceTree = "<group>"; };
+		F09C02EF1C75A3D900826B4F /* CollectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectViewController.xib; sourceTree = "<group>"; };
+		F09C02F21C75A3E800826B4F /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		F09C02F31C75A3E800826B4F /* MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +95,11 @@
 		F036E55E1C759CE400ECF41A = {
 			isa = PBXGroup;
 			children = (
+				F09C02F61C75A66D00826B4F /* SellView */,
+				F09C02F71C75A68E00826B4F /* BuyViewView */,
+				F09C02F81C75A6A600826B4F /* CollectView */,
+				F09C02F91C75A6B600826B4F /* MineView */,
+				F09C02E51C75A39100826B4F /* Tab */,
 				F036E5691C759CE400ECF41A /* QYProject */,
 				F036E57E1C759CE400ECF41A /* QYProjectTests */,
 				F036E5891C759CE500ECF41A /* QYProjectUITests */,
@@ -98,11 +121,12 @@
 			isa = PBXGroup;
 			children = (
 				F036E56A1C759CE400ECF41A /* AppDelegate.swift */,
-				F036E56C1C759CE400ECF41A /* ViewController.swift */,
 				F036E56E1C759CE400ECF41A /* Main.storyboard */,
 				F036E5711C759CE400ECF41A /* Assets.xcassets */,
 				F036E5731C759CE400ECF41A /* LaunchScreen.storyboard */,
 				F036E5761C759CE400ECF41A /* Info.plist */,
+				F09C02E11C75A28200826B4F /* BaseViewController.swift */,
+				F09C02E31C75A2B900826B4F /* HomeViewController.swift */,
 			);
 			path = QYProject;
 			sourceTree = "<group>";
@@ -123,6 +147,49 @@
 				F036E58C1C759CE500ECF41A /* Info.plist */,
 			);
 			path = QYProjectUITests;
+			sourceTree = "<group>";
+		};
+		F09C02E51C75A39100826B4F /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				F09C02E61C75A3A900826B4F /* SellViewController.swift */,
+				F09C02E71C75A3A900826B4F /* SellViewController.xib */,
+				F09C02EA1C75A3BD00826B4F /* BuyViewController.swift */,
+				F09C02EB1C75A3BD00826B4F /* BuyViewController.xib */,
+				F09C02EE1C75A3D900826B4F /* CollectViewController.swift */,
+				F09C02EF1C75A3D900826B4F /* CollectViewController.xib */,
+				F09C02F21C75A3E800826B4F /* MineViewController.swift */,
+				F09C02F31C75A3E800826B4F /* MineViewController.xib */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		F09C02F61C75A66D00826B4F /* SellView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SellView;
+			sourceTree = "<group>";
+		};
+		F09C02F71C75A68E00826B4F /* BuyViewView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BuyViewView;
+			sourceTree = "<group>";
+		};
+		F09C02F81C75A6A600826B4F /* CollectView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectView;
+			sourceTree = "<group>";
+		};
+		F09C02F91C75A6B600826B4F /* MineView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MineView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +297,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F036E5751C759CE400ECF41A /* LaunchScreen.storyboard in Resources */,
+				F09C02F51C75A3E800826B4F /* MineViewController.xib in Resources */,
 				F036E5721C759CE400ECF41A /* Assets.xcassets in Resources */,
+				F09C02E91C75A3A900826B4F /* SellViewController.xib in Resources */,
+				F09C02ED1C75A3BD00826B4F /* BuyViewController.xib in Resources */,
 				F036E5701C759CE400ECF41A /* Main.storyboard in Resources */,
+				F09C02F11C75A3D900826B4F /* CollectViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +327,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F036E56D1C759CE400ECF41A /* ViewController.swift in Sources */,
 				F036E56B1C759CE400ECF41A /* AppDelegate.swift in Sources */,
+				F09C02EC1C75A3BD00826B4F /* BuyViewController.swift in Sources */,
+				F09C02E21C75A28200826B4F /* BaseViewController.swift in Sources */,
+				F09C02F41C75A3E800826B4F /* MineViewController.swift in Sources */,
+				F09C02E81C75A3A900826B4F /* SellViewController.swift in Sources */,
+				F09C02E41C75A2B900826B4F /* HomeViewController.swift in Sources */,
+				F09C02F01C75A3D900826B4F /* CollectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +558,7 @@
 				F036E5911C759CE500ECF41A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F036E5921C759CE500ECF41A /* Build configuration list for PBXNativeTarget "QYProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +567,7 @@
 				F036E5941C759CE500ECF41A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F036E5951C759CE500ECF41A /* Build configuration list for PBXNativeTarget "QYProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +576,7 @@
 				F036E5971C759CE500ECF41A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
