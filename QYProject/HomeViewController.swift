@@ -10,6 +10,9 @@ import UIKit
 
 class HomeViewController: UITabBarController {
 
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBarHidden = true
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,8 +41,9 @@ class HomeViewController: UITabBarController {
         let mineView = UINavigationController(rootViewController: mine)
         mineView.tabBarItem.title = "我的"
         tabbarController.addChildViewController(mineView)
-        
+        tabbarController.navigationController?.navigationBar.hidden = true
         self.viewControllers = [sellView,buyView,collectView,mineView];
+        
     }
     
     override func didReceiveMemoryWarning() {

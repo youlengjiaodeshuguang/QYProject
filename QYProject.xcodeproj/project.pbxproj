@@ -23,6 +23,8 @@
 		F09C02F11C75A3D900826B4F /* CollectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F09C02EF1C75A3D900826B4F /* CollectViewController.xib */; };
 		F09C02F41C75A3E800826B4F /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C02F21C75A3E800826B4F /* MineViewController.swift */; };
 		F09C02F51C75A3E800826B4F /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F09C02F31C75A3E800826B4F /* MineViewController.xib */; };
+		F09C02FB1C76C73700826B4F /* PartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C02FA1C76C73700826B4F /* PartsView.swift */; };
+		F09C02FD1C770AE400826B4F /* SellMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C02FC1C770AE400826B4F /* SellMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		F09C02EF1C75A3D900826B4F /* CollectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectViewController.xib; sourceTree = "<group>"; };
 		F09C02F21C75A3E800826B4F /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		F09C02F31C75A3E800826B4F /* MineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
+		F09C02FA1C76C73700826B4F /* PartsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartsView.swift; sourceTree = "<group>"; };
+		F09C02FC1C770AE400826B4F /* SellMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,8 @@
 		F09C02F61C75A66D00826B4F /* SellView */ = {
 			isa = PBXGroup;
 			children = (
+				F09C02FA1C76C73700826B4F /* PartsView.swift */,
+				F09C02FC1C770AE400826B4F /* SellMenuView.swift */,
 			);
 			path = SellView;
 			sourceTree = "<group>";
@@ -333,7 +339,9 @@
 				F09C02F41C75A3E800826B4F /* MineViewController.swift in Sources */,
 				F09C02E81C75A3A900826B4F /* SellViewController.swift in Sources */,
 				F09C02E41C75A2B900826B4F /* HomeViewController.swift in Sources */,
+				F09C02FD1C770AE400826B4F /* SellMenuView.swift in Sources */,
 				F09C02F01C75A3D900826B4F /* CollectViewController.swift in Sources */,
+				F09C02FB1C76C73700826B4F /* PartsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

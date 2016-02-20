@@ -12,7 +12,7 @@ class BuyViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        createNavgationView("收购")
         // Do any additional setup after loading the view.
     }
 

@@ -9,13 +9,46 @@
 import UIKit
 
 class SellViewController: BaseViewController {
-
+    
+    let scrollView = UIScrollView()
+    var score:SellMenuView!
+    var bestscore:PartsView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        createNavgationView("出售")
+        createScrollView()
+        
     }
+    
+    func createScrollView(){
+        scrollView.frame = CGRectMake(0, 64, kScreenWidthSize, kScreenHeightSize-64)
+        scrollView.backgroundColor = UIColor.redColor()
+        self.view.addSubview(scrollView)
+        setupScoreLabels()
+        
+    }
+    
+    
 
+    func setupScoreLabels()
+    {
+        score = SellMenuView(stype: MenuType.Common,target: self)
+        //score.frame.origin = CGPointMake(50, 80)
+        //score.changeScore(value: 0)
+        scrollView.addSubview(score)
+        
+//        bestscore = PartsView(stype: ScoreType.Best)
+//        bestscore.frame.origin.x = 170
+//        bestscore.frame.origin.y = 80
+//        bestscore.changeScore(value: 99)
+//        self.view.addSubview(bestscore)
+    }
+    
+    func actionButton(){
+        
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

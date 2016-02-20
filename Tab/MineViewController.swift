@@ -12,7 +12,7 @@ class MineViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        createNavgationView("我的")
         // Do any additional setup after loading the view.
     }
 

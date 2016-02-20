@@ -12,7 +12,7 @@ class CollectViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        createNavgationView("收藏")
         // Do any additional setup after loading the view.
     }
 
