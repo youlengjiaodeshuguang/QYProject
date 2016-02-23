@@ -34,15 +34,13 @@ class SellViewController: BaseViewController,UITableViewDelegate,UITableViewData
     
     
 
-    func setupScoreLabels()
-    {
+    func setupScoreLabels(){
         score = SellMenuView(stype: MenuType.Common,target: self)
         scrollView.addSubview(score)
         
         list  = SellMenuView(stype: MenuType.List,  target: self)
         list.frame = CGRectMake(0, 210, kScreenWidthSize,(kScreenWidthSize)/4)
         list.backgroundColor = UIColor.yellowColor()
-        
         scrollView.addSubview(list)
         createTableView()
         
@@ -87,10 +85,29 @@ class SellViewController: BaseViewController,UITableViewDelegate,UITableViewData
 //        return footerView
 //    }
     
+    
+    
     func actionButton(){
         
         
     }
+    
+    func listButtonAction(sender:UIButton){
+        switch(sender.tag){
+        case 201:
+            print("");
+        case 202:
+            print("");
+        case 203:
+            print("");
+        case 204:
+            let university = UniversityViewController()
+            self.navigationController?.pushViewController(university, animated: true)
+        default:
+            print("");
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

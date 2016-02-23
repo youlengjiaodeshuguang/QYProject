@@ -13,6 +13,8 @@
 		F036E5751C759CE400ECF41A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F036E5731C759CE400ECF41A /* LaunchScreen.storyboard */; };
 		F036E5801C759CE400ECF41A /* QYProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036E57F1C759CE400ECF41A /* QYProjectTests.swift */; };
 		F036E58B1C759CE500ECF41A /* QYProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F036E58A1C759CE500ECF41A /* QYProjectUITests.swift */; };
+		F0513F711C7C3E380012F7B5 /* UniversityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0513F6F1C7C3E380012F7B5 /* UniversityViewController.swift */; };
+		F0513F721C7C3E380012F7B5 /* UniversityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0513F701C7C3E380012F7B5 /* UniversityViewController.xib */; };
 		F09C02E21C75A28200826B4F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C02E11C75A28200826B4F /* BaseViewController.swift */; };
 		F09C02E41C75A2B900826B4F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C02E31C75A2B900826B4F /* HomeViewController.swift */; };
 		F09C02E81C75A3A900826B4F /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09C02E61C75A3A900826B4F /* SellViewController.swift */; };
@@ -56,6 +58,8 @@
 		F036E5861C759CE400ECF41A /* QYProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QYProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F036E58A1C759CE500ECF41A /* QYProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QYProjectUITests.swift; sourceTree = "<group>"; };
 		F036E58C1C759CE500ECF41A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0513F6F1C7C3E380012F7B5 /* UniversityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversityViewController.swift; sourceTree = "<group>"; };
+		F0513F701C7C3E380012F7B5 /* UniversityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UniversityViewController.xib; sourceTree = "<group>"; };
 		F09C02E11C75A28200826B4F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F09C02E31C75A2B900826B4F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F09C02E61C75A3A900826B4F /* SellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				F09C02FC1C770AE400826B4F /* SellMenuView.swift */,
+				F0513F6F1C7C3E380012F7B5 /* UniversityViewController.swift */,
+				F0513F701C7C3E380012F7B5 /* UniversityViewController.xib */,
 			);
 			path = SellView;
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 				F09C02E91C75A3A900826B4F /* SellViewController.xib in Resources */,
 				F09C02ED1C75A3BD00826B4F /* BuyViewController.xib in Resources */,
 				F036E5701C759CE400ECF41A /* Main.storyboard in Resources */,
+				F0513F721C7C3E380012F7B5 /* UniversityViewController.xib in Resources */,
 				F09C02F11C75A3D900826B4F /* CollectViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +344,7 @@
 				F09C02E81C75A3A900826B4F /* SellViewController.swift in Sources */,
 				F09C02E41C75A2B900826B4F /* HomeViewController.swift in Sources */,
 				F09C02FD1C770AE400826B4F /* SellMenuView.swift in Sources */,
+				F0513F711C7C3E380012F7B5 /* UniversityViewController.swift in Sources */,
 				F09C02F01C75A3D900826B4F /* CollectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,8 @@ enum MenuType{
     case List    //最高分面板
 }
 
+let listButtonTag = 201
+
 class SellMenuView: UIView {
      let defaultFrame = CGRectMake(0,0,kScreenWidthSize,200)
     var stype:String!
@@ -33,14 +35,15 @@ class SellMenuView: UIView {
                 self.addSubview(button)
             }
         }else{
-            let arr = ["蔬菜","水果","家具","建筑材料"]
+            let arr = ["蔬菜","水果","实践平台","高校专区"]
             for var index = 0;index<arr.count;++index{
                 let button = UIButton(frame: CGRectMake(((kScreenWidthSize)/4 + 1) * (CGFloat)(index%4),0,(kScreenWidthSize-3)/4,(kScreenWidthSize)/4))
                 button.titleLabel?.font = UIFont.systemFontOfSize(12)
                 button.setTitle(arr[index], forState: .Normal)
+                button.tag = listButtonTag + index
                 button.backgroundColor = UIColor.redColor()
                 button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
-                button.addTarget(target, action: "actionButton", forControlEvents: UIControlEvents.TouchUpInside)
+                button.addTarget(target, action: "listButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
                 self.addSubview(button)
             }
             

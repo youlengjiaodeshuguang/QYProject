@@ -56,7 +56,6 @@ class BaseViewController: UIViewController {
         button.addTarget(self, action: "backAction", forControlEvents: UIControlEvents.TouchUpInside)
         bgView.addSubview(button)
     }
-    
     func backAction(){
         self.navigationController?.popViewControllerAnimated(true)
     }
