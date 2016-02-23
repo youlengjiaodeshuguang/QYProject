@@ -8,11 +8,12 @@
 
 import UIKit
 
-class SellViewController: BaseViewController {
+class SellViewController: BaseViewController,UITableViewDelegate,UITableViewDataSource{
     
     let scrollView = UIScrollView()
     var score:SellMenuView!
-    var bestscore:PartsView!
+    var list:SellMenuView!
+    var tableView:UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,8 +23,10 @@ class SellViewController: BaseViewController {
     }
     
     func createScrollView(){
-        scrollView.frame = CGRectMake(0, 64, kScreenWidthSize, kScreenHeightSize-64)
-        scrollView.backgroundColor = UIColor.redColor()
+        scrollView.frame = CGRectMake(0, 64, kScreenWidthSize, kScreenHeightSize-64-49)
+        scrollView.contentSize = CGSizeMake(kScreenWidthSize, 1000);
+        scrollView.backgroundColor = UIColor.grayColor()
+        scrollView.scrollEnabled = true
         self.view.addSubview(scrollView)
         setupScoreLabels()
         
@@ -34,16 +37,55 @@ class SellViewController: BaseViewController {
     func setupScoreLabels()
     {
         score = SellMenuView(stype: MenuType.Common,target: self)
-        //score.frame.origin = CGPointMake(50, 80)
-        //score.changeScore(value: 0)
         scrollView.addSubview(score)
         
-//        bestscore = PartsView(stype: ScoreType.Best)
-//        bestscore.frame.origin.x = 170
-//        bestscore.frame.origin.y = 80
-//        bestscore.changeScore(value: 99)
-//        self.view.addSubview(bestscore)
+        list  = SellMenuView(stype: MenuType.List,  target: self)
+        list.frame = CGRectMake(0, 210, kScreenWidthSize,(kScreenWidthSize)/4)
+        list.backgroundColor = UIColor.yellowColor()
+        
+        scrollView.addSubview(list)
+        createTableView()
+        
     }
+    
+    func createTableView(){
+        tableView = UITableView(frame: CGRectMake(0, 210 + (kScreenWidthSize)/4 + 10, kScreenWidthSize, 1000 - 210-(kScreenWidthSize)/4))
+        tableView.delegate = self
+        tableView.dataSource = self
+        scrollView.addSubview(tableView)
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+        let cell = UITableViewCell()
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 20;
+    }
+    
+    func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "猜你喜欢"
+    }
+// MARK: - 可以用来自定义Header
+//    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//
+//        let footerView = UIView(frame: CGRectMake(0, 0, tableView.frame.size.width, 40))
+//        footerView.backgroundColor = UIColor.cyanColor()
+//        let label = UILabel(frame: CGRectMake(5,5,80,30))
+//        label.text = "猜你喜欢"
+//        footerView.addSubview(label)
+//        
+//        return footerView
+//    }
     
     func actionButton(){
         
